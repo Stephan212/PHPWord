@@ -67,6 +67,19 @@ class Chart extends AbstractStyle
     private $showLegend = false;
 
     /**
+     * Chart legend Position. choices:
+     * r = right
+     * b = bottom
+     * t = top
+     * l = left
+
+     * default: right
+     *
+     * @var string
+     */
+    private $legendPosition = 'r';
+
+    /**
      * A list of display options for data labels
      *
      * @var array
@@ -281,6 +294,28 @@ class Chart extends AbstractStyle
     public function setShowLegend($value = false)
     {
         $this->showLegend = $value;
+
+        return $this;
+    }
+
+    /**
+     * Get chart legend position
+     *
+     * @return string
+     */
+    public function getLegendPosition()
+    {
+        return $this->legendPosition;
+    }
+
+    /**
+     * Set chart legend position
+     *
+     * @param bool $value
+     */
+    public function setLegendPosition($value = 'r')
+    {
+        $this->legendPosition = $value;
 
         return $this;
     }

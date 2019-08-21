@@ -67,13 +67,7 @@ class Chart extends AbstractStyle
     private $showLegend = false;
 
     /**
-     * Chart legend Position. choices:
-     * r = right
-     * b = bottom
-     * t = top
-     * l = left
-
-     * default: right
+     * Chart legend Position. 
      *
      * @var string
      */
@@ -309,7 +303,13 @@ class Chart extends AbstractStyle
     }
 
     /**
-     * Set chart legend position
+     * Set chart legend position. choices:
+     * "r" - right of chart
+     * "b" - bottom of chart
+     * "t" - top of chart
+     * "l" - left of chart
+     *
+     * default: right
      *
      * @param bool $value
      */
